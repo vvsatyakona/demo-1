@@ -1,0 +1,8 @@
+---
+- name: this play book will install tomcat and java and deploy the hello world
+  hosts: myclients
+  tasks: 
+    - name: this task will install java on your hosts
+      yum:
+        name: open JDk
+        state: present
